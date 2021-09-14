@@ -35,7 +35,7 @@ class Garage {
         this.vehicles = [];
     }
     add(newVehicle) {
-        if (!(newVehicle instanceof Vehicle || Car || Motorcycle)) {
+        if (!(newVehicle instanceof Vehicle)) {
             return "Only vehicles are allowed in here!";
         }
         if (this.vehicles.length === this.capacity) {
